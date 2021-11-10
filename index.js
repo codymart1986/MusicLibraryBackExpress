@@ -46,7 +46,7 @@ app.delete('/api/products/:id', (req, res) => {
 
 // Beginning of API endpoints for songs
 app.get('/api/songs', (req, res) => {
-    const songs = repoContext.products.findAllSongs();
+    const songs = repoContext.songs.findAllSongs();
     return res.send(songs);
 });
 
